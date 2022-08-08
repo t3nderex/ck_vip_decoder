@@ -1,4 +1,4 @@
-# ck_vip_decoder
+# ck_vip_decoder (2020.11.03 제작)
 
 
 ## 설명
