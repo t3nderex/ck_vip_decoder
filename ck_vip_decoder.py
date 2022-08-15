@@ -2,27 +2,22 @@ import re
 
 
 def read_ck_vip(path):
-    
-    ck_vip = open(path,'rt')
-    ck_vip_script = ck_vip.read()
-    return ck_vip_script
+    return open(path,'rt').read()
 
 
 def str_to_integer(str):
-    integer_li = list(map(int, str))
-    return integer_li
+    return list(map(int, str))
 
 
 def is_ck_encoded_url_format(str):
-    if list[0] == 263 and list[1] ==275:
+    if str[0] == 263 and str[1] ==275:
         return True
     else:
         return False
 
     
 def decode(list):
-    for i in list:
-        list[i] -=159
+    list = [i-=159 for i in list]
     return list
 
 
